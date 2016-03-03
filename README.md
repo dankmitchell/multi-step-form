@@ -12,7 +12,7 @@ This example takes advantage of the `data-*` HTML5 attributes for storing the st
 
 You need nodeJS to run this example. In addition, you should have bower installed as well. If it is not, run `npm install bower -g` from the command line.
 
-After cloning the repository, drop into the command line, go to the install directory, and run `npm init` to install the nodeJS application dependencies. Then go into the static folder and run `bower init` to install the bower components.
+After cloning the repository, drop into the command line, go to the install directory, and run `npm install` to install the nodeJS application dependencies. Then go into the static folder and run `bower install` to install the bower components.
 
 You can then run the server by typing `node server.js` from the root of the installation. The application can be view at http://localhost:3000.
 
