@@ -1,0 +1,32 @@
+{
+  "name": "multi-step-form",
+  "description": "Simple HTML5 multiple step form with validation",
+  "main": "server.js",
+  "authors": [
+    "Michael Szul <michael@szul.us>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "html5",
+    "javascript",
+    "validation",
+    "steps"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "milligram": "^1.1.0",
+    "metron": "https://github.com/szul/metron.git"
+  }
+}
