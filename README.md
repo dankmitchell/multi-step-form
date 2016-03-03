@@ -18,4 +18,5 @@ You can then run the server by typing `node server.js` from the root of the inst
 
 ### TODO
 
-Add a back button to show it work in reverse.
+* Add a back button to show it work in reverse.
+* Make the example form look pretty.
