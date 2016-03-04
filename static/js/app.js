@@ -1,12 +1,12 @@
 $(document).ready(function() {
     $("section[data-step]").hide();
+    $("button.button-outline").hide();
     $("section[data-step=1]").show();
     $("input[type='submit']").click(function(e) {
         e.preventDefault();
         var step = $("form").data("step");
         var isValid = true;
         $("section[data-step='" + step + "'] input[required='required']").each(function(idx, elem) {
-            console.log(elem);
             $(elem).removeClass("error");
             if($(elem).val().trim() === "") {
                 isValid = false;
@@ -21,6 +21,18 @@ $(document).ready(function() {
             $("form").data("step", step);
             $("section[data-step]").hide();
             $("section[data-step='" + step + "']").show();
+            $("button.button-outline").show();
+        }
+    });
+    $("button.button-outline").click(function(e) {
+        e.preventDefault();
+        var step = $("form").data("step");
+        step -= 1;
+        $("form").data("step", step);
+        $("section[data-step]").hide();
+        $("section[data-step='" + step + "']").show();
+        if(step === 1) {
+            $("button.button-outline").hide();
         }
     });
 });
